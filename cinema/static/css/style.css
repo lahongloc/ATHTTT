@@ -1,0 +1,55 @@
+* {
+    font-family: Tahoma;
+}
+
+nav.header {
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white !important;
+}
+
+
+body {
+    background-image: url('https://fimth.com/wp-content/uploads/netflix-1.jpg')
+}
+
+.movies-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.movies-items{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.col-xs-12 {
+    width: 33%;
+    position: relative;
+
+}
+
+.col-xs-12 img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 2rem;
+    margin: 10px;
+    visibility: hidden;
+    transition: visibility 0s ease-out;
+    transition-delay: 0.125s;
+    z-index: 0.5;
+}
+
+.col-xs-12:hover > div.card-body {
+    visibility: visible;
+}
+
+
+
